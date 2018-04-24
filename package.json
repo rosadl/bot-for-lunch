@@ -1,0 +1,38 @@
+{
+  "name": "botforlunch",
+  "version": "1.0.0",
+  "description": "botforlunch is a slack bot for helping the companies to make groups for lunch",
+  "main": "index.js",
+  "author": {
+    "name": "Rosario Dominguez",
+    "email": "rosadomlop@gmail.com"
+  },
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "slack",
+    "bot"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "botkit": "0.2.2",
+    "botkit-storage-mongo": "^1.0.2",
+    "mongodb": "^1.4.39",
+    "later": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "slack-mock": "^1.1.1"
+  }
+}
