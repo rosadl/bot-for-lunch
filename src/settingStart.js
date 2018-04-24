@@ -20,11 +20,11 @@ class SettingStart {
 
   automaticButton(bot, message, controller) {
     later.date.localTime();
-    this.textSchedStart = later.parse.text('at 9:11am everyday');
+    this.textSchedStart = later.parse.text('at 10:00am every friday');
     later.setInterval(() => {
       this.startEvent(bot, message);
     }, this.textSchedStart);
-    this.textSchedEnd = later.parse.text('at 9:13am everyday');
+    this.textSchedEnd = later.parse.text('at 12:00pm every friday');
     later.setInterval(() => {
       this.endEvent(bot, message, controller);
     }, this.textSchedEnd);
